@@ -9,6 +9,7 @@
 <link href="css/slick-theme.css" rel="stylesheet" type="text/css"><!--スライダー-->
 <link href="css/remodal.css" rel="stylesheet" type="text/css"><!--remodal/css-->
 <link href="css/remodal-default-theme.css" rel="stylesheet" type="text/css"><!--remodal/css-->
+<link href="css/aos.css" rel="stylesheet" type="text/css"><!--aos-->
 <link href="css/style.css" rel="stylesheet">
 <!--メインCSS-->
 </head>
@@ -54,14 +55,14 @@
 	<!--ハンバーガーメニュー終わり-->
 	
 	<div id="main_visual">
-		
-		<div class="main_visual_box" id="main_link_sp">
-			<ul class="slide">
-				<li class="item"><img src="images/main1.jpg" alt=""></li>
-				<li class="item"><img src="images/main2.jpg" alt=""></li>
-				<li class="item"><img src="images/main3.jpg" alt=""></li>
-			</ul>
-		</div><!--main_visual_box-->
+    	<div class="main_visual_box" id="main_link_sp">
+        	<video autoplay loop muted playsinline>
+            	<source src="images/mv.mp4" type="video/mp4">
+				<!--コーヒー<source src="images/movie.mp4" type="video/mp4">-->
+            Your browser does not support the video tag.
+       		</video>
+    	</div>
+	</div><!--main_visual-->
 	
 	
 	<div class="toptitle">
@@ -92,7 +93,7 @@
 					SCROLL<span class="delay-time fadeUp"></span>
 				</div><!--scrolldown-->
 				
-				<p>These pictures were taken by me</p>
+				<p></p>
 				
 			</div><!--toptitle-inner wrapper-->
 			
@@ -138,7 +139,7 @@
 		
 		<div class="works_section_inner">
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="000">
 				<figure class="works_img">
 					<img src="images/koiwashika.jpg" alt="">
 				</figure>
@@ -223,7 +224,7 @@
 				<!--内容おわり-->
 			</article>
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="300">
 				<figure class="works_img">
 					<img src="images/portfolio.jpg" alt="">
 				</figure>
@@ -304,7 +305,7 @@
 				<!--内容おわり-->
 			</article>
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="600">
 				<figure class="works_img">
 					<img src="images/main_bana.jpg" alt="">
 				</figure>
@@ -369,7 +370,7 @@
 				<!--内容おわり-->
 			</article>
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="000">
 				<figure class="works_img">
 					<img src="images/mian_gym.jpg" alt="">
 				</figure>
@@ -434,7 +435,7 @@
 			</article>
 			
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="300">
 				<figure class="works_img">
 					<img src="images/main_contact.jpg" alt="">
 				</figure>
@@ -497,7 +498,7 @@
 				<!--内容おわり-->
 			</article>
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="600">
 				<figure class="works_img">
 					<img src="images/flyer1.jpg" alt="">
 				</figure>
@@ -558,7 +559,7 @@
 				<!--内容おわり-->
 			</article>
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="000">
 				<figure class="works_img">
 					<img src="images/flyer2.jpg" alt="">
 				</figure>
@@ -619,7 +620,7 @@
 				<!--内容おわり-->
 			</article>
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="300">
 				<figure class="works_img">
 					<img src="images/main_fhoto.jpg" alt="">
 				</figure>
@@ -681,7 +682,7 @@
 			</article>
 			
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="600">
 				<figure class="works_img">
 					<img src="images/ikon.svg" alt="">
 				</figure>
@@ -742,7 +743,7 @@
 				<!--内容おわり-->
 			</article>
 			
-			<article class="works_item">
+			<article class="works_item fadein" data-aos="fade-up" data-aos-delay="000">
 				<figure class="works_img">
 					<img src="images/movie_main.jpg" alt="">
 				</figure>
@@ -817,222 +818,298 @@
 		<div class="skill_section_inner">
 
 			<ul class="skill_ul">
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="60" data-duration="2200" data-stroke-width="15" data-stroke-color="#ff651e" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/html-5.svg">
+								<span>HTML『WEB制作』</span>
+							</p>
+							<p class="skill_detail">基本的なコーディングができます。ユーザビリティ・アクセシビリティを意識したマークアップを勉強中です。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="60" data-duration="2200" data-stroke-width="15" data-stroke-color="#00ccff" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/css.svg">
+								<span>CSS『WEB制作』</span>
+							</p>
+							<p class="skill_detail">簡単なレスポンシブサイトの構築ができます。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				 
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="50" data-duration="2200" data-stroke-width="15" data-stroke-color="#ffe400" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/js.svg">
+								<span>Javascript『WEB制作』</span>
+							</p>
+							<p class="skill_detail">コードを書くことはできませんが、簡単なライブラリの実装ができます。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="70" data-duration="2200" data-stroke-width="15" data-stroke-color="#245905" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/dreamweaver.svg">
+								<span>Dreamweaver『制作』</span>
+							</p>
+							<p class="skill_detail">コーディングする際に主にメインで使用しています。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="40" data-duration="2200" data-stroke-width="15" data-stroke-color="#870a95" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/xd.svg">
+								<span>XD『WEB制作』</span>
+							</p>
+							<p class="skill_detail">サイトのデザインカンプで使用しています。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				  <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="40" data-duration="2200" data-stroke-width="15" data-stroke-color="#3ab3f4" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/wordpress.svg">
+								<span>Wordpress『WEB制作』</span>
+							</p>
+							<p class="skill_detail">まだまだ勉強中です。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="60" data-duration="2200" data-stroke-width="15" data-stroke-color="#fc9800" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/illustrator.svg">
+								<span>illustrator『デザイン』</span>
+							</p>
+							<p class="skill_detail">複雑なイラストは描けませんが、基本機能は一通り使えます。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 	 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="60" data-duration="2200" data-stroke-width="15" data-stroke-color="#001834" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/photoshop.svg">
+								<span>Photoshop『デザイン』</span>
+							</p>
+							<p class="skill_detail">切り抜きやトリミング、画像加工などの基本機能は使えます。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="80" data-duration="2200" data-stroke-width="15" data-stroke-color="#282a3c" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/Lr.svg">
+								<span>Lightroom『デザイン』</span>
+							</p>
+							<p class="skill_detail">写真の明るさや色味の調整などを行うことが可能です。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				   <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="70" data-duration="2200" data-stroke-width="15" data-stroke-color="#2919a4" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/Pr.svg">
+								<span>Premiere Pro『動画』</span>
+							</p>
+							<p class="skill_detail">動画作成（字幕/BGM/カラー/エフェクト)が可能です。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="50" data-duration="2200" data-stroke-width="15" data-stroke-color="#fc9800" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/Gan.svg">
+								<span>Google Analytics『広告』</span>
+							</p>
+							<p class="skill_detail">「GA4」が業務で必要な場合は学習します。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
+				 
+				 <li class="skill_list skill">
+					<div class="progress-container">
+						<div class="progress-item" data-percent="60" data-duration="2200" data-stroke-width="15" data-stroke-color="#0c78f3" data-start-position="top">
+						  <div class="progress-item__inner">
+							<svg class="progress-svg" viewBox="0 0 100 100">
+							  <circle class="progress-background" cx="50" cy="50" r="40"></circle>
+							  <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+							</svg>
+							<div class="progress-text">
+							  <span class="progress-value">0</span>
+							  <span class="progress-unit">%</span>
+							</div>
+						  </div>
+						  <div class="skill_name">
+						  	<p class="skill_icon">
+								<img src="images/Gad.svg">
+								<span>Google AdWords『広告』</span>
+							</p>
+							<p class="skill_detail">Googleアドワーズを活用した広告運用をしていました。</p>
+						  </div>
+						</div>
+					  </div>				
+				　</li>
 				
-				<li class="skill_list skill" data-proficiency="60">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/html-5.svg">
-							<span>HTML</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">基本的なコーディングができます。ユーザビリティ・アクセシビリティを意識したマークアップを勉強中です。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="60">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/css.svg">
-							<span>CSS</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">簡単なレスポンシブサイトの構築ができます。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="60">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/illustrator.svg">
-							<span>illustrator</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">複雑なイラストは描けませんが、基本機能は一通り使えます。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="60">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/photoshop.svg">
-							<span>Photoshop</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">切り抜きやトリミング、画像加工などの基本機能は使えます。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="40">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/js.svg">
-							<span>Javascript</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">コードを書くことはできませんが、簡単なライブラリの実装ができます。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="70">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/dreamweaver.svg">
-							<span>Dreamweaver</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">コーディングする際に主にメインで使用しています。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="50">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/xd.svg">
-							<span>XD</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">サイトのデザインカンプで使用しています。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="30">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/wordpress.svg">
-							<span>Wordpress</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">まだまだ勉強中です。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="70">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/Pr.svg">
-							<span>Premiere Pro</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">字幕・BGMつきの動画作成が可能です。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="80">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/Lr.svg">
-							<span>Lightroom</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">写真の明るさや色味の調整などを行うことが可能です。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="60">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/Gan.svg">
-							<span>Google Analytics</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">前職でGoogleアナリティクスを活用した、WEB集客向上提案をしていました。</p>
-				</li>
-				
-				<li class="skill_list skill" data-proficiency="60">
-					<div class="skill-info">
-						<p class="skill_icon">
-							<img src="images/Gad.svg">
-							<span>Google AdWords</span>
-						</p>
-						<p class="skill-percentage"> 
-							<span class="countup"></span>%
-						</p>
-					</div>
-					
-					<div class="skill-bar-container">
-						<div class="skill-bar"></div>
-					</div>
-					
-					<p class="skill_detail">前職でGoogleアドワーズを活用した広告運用をしていました。</p>
-				</li>
 			</ul>
 			
 		</div><!--skill_section_inner-->
@@ -1054,7 +1131,7 @@
 					<!--<span class="c-button-radius__icon">
 						<img src="/assets/img/common/icon_contact.svg" alt="">
 					</span>-->
-					keita.kunren@gmail.com
+					k.k1995.0906@gmail.com
 				</a>
 			</p>
 			
@@ -1063,7 +1140,7 @@
 	
 	<footer class="l-footer p-footer"> 
 		<p class="p-footer__cr">
-			<small lang="en">&copy; 2023 コイワケイタのポートフォリオサイト</small>
+			<small lang="en">&copy; 2024 コイワケイタのポートフォリオサイト</small>
 		</p>
 	</footer>
 	
@@ -1089,6 +1166,7 @@
 			});
 		});
 	})(jQuery);
+	AOS.init();			
 	</script>
 	
 </body>
